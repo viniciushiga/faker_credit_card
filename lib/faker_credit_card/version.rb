@@ -1,3 +1,5 @@
-module FakerCreditCard
-  VERSION = "0.0.1"
+module Faker
+  module CreditCard
+    VERSION = "0.0.1"
+  end
 end
