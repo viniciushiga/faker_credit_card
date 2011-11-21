@@ -4,14 +4,13 @@ require "faker_credit_card/version"
 
 Gem::Specification.new do |s|
   s.name        = "faker_credit_card"
-  s.version     = FakerCreditCard::VERSION
+  s.version     = Faker::CreditCard::VERSION
+  s.platform    = Gem::Platform::RUBY
   s.authors     = ["Vinicius Akio Higa"]
   s.email       = ["viniciushiga@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
-
-  s.rubyforge_project = "faker_credit_card"
+  s.summary     = %q{}
+  s.description = %q{}
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
