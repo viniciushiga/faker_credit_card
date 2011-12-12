@@ -16,7 +16,7 @@ module CreditCardNumberValidator
   def valid_association?(number)
     ccnum = number.to_s.gsub(/\D/, "")
 
-    return :dinners  if ccnum.length == 14 && ccnum =~ /^3(0[0-5]|[68])/   # 300xxx-305xxx, 36xxxx, 38xxxx
+    return :diners  if ccnum.length == 14 && ccnum =~ /^3(0[0-5]|[68])/   # 300xxx-305xxx, 36xxxx, 38xxxx
     return :amex     if ccnum.length == 15 && ccnum =~ /^3[47]/            # 34xxxx, 37xxxx
     return :visa     if [13,16].include?(ccnum.length) && ccnum =~ /^4/    # 4xxxxx
     return :master   if ccnum.length == 16 && ccnum =~ /^5[1-5]/           # 51xxxx-55xxxx

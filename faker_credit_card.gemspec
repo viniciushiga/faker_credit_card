@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Vinicius Akio Higa"]
   s.email       = ["viniciushiga@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/viniciushiga/faker_credit_card"
   s.summary     = %q{}
   s.description = %q{}
 

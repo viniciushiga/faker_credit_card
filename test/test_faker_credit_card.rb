@@ -10,8 +10,8 @@ class TestFakerCreditCard < Test::Unit::TestCase
     assert valid_credit_card?(number)
   end
 
-  def test_dinners_club
-    number = Faker::CreditCard.number(:dinners_club)
+  def test_diners_club
+    number = Faker::CreditCard.number(:diners_club)
     assert_not_nil number
     assert_equal number.size, 14
     assert valid_credit_card?(number)
